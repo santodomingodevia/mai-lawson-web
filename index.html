@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mai Lawson — DJ & productora</title>
+<meta name="description" content="DJ y productora argentina. Shows, música, prensa y booking.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mai Lawson — DJ & productora">
+<meta property="og:description" content="DJ y productora argentina. Shows, música, prensa y booking.">
+<meta property="og:image" content="https://resonant-maamoul-baa9e8.netlify.app/fotos/compartir.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://resonant-maamoul-baa9e8.netlify.app/">
+<meta name="twitter:card" content="summary_large_image">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<script src="./image-slot.js"></script>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#131010"></rect><text x="50" y="60" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-size="30" fill="#F27B69">ML</text></svg></template>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500&family=Space+Mono:ital@0;1&family=Old+Standard+TT:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#131010;--ink:#F3ECE9;--mute:#ADA19E;--line:rgba(243,236,233,.14);--acc:#F27B69;--card:#1D1918;--logoF:invert(1);--logoB:screen;--img:brightness(.85);--scF:invert(.93) hue-rotate(180deg) contrast(.95)}
+:root[data-theme=light]{--bg:#F5F0EE;--ink:#1C1716;--mute:#6F6563;--line:rgba(28,23,22,.14);--acc:#D4513F;--card:#EDE5E2;--logoF:none;--logoB:multiply;--img:none;--scF:none}
+:root:not([data-lang=es]) [data-l=es],:root[data-lang=es] [data-l=en]{display:none!important}
+:root[data-lang=es] [data-la=en],:root:not([data-lang=es]) [data-la=es]{opacity:.35}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Outfit,sans-serif;font-weight:300;transition:background .5s,color .5s;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}a:hover{color:var(--acc)}
+input,textarea,button{font:inherit;color:inherit}
+@keyframes mlMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){[data-track]{animation:none!important}}
+@media (max-width:960px){[data-navlinks]{display:none!important}}
+@media (min-width:961px){[data-menubtn]{display:none!important}}
+@media (max-width:820px){[data-side]{position:static!important}}
+@keyframes mlHeroImg{from{opacity:0;transform:scale(1.18)}to{opacity:1;transform:scale(1)}}
+@keyframes mlBreath{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
+@keyframes mlRise{from{transform:translateY(105%)}to{transform:translateY(0)}}
+@keyframes mlFade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){[data-hero] *{animation:none!important}}
+</style>
+</helmet>
+<div style="min-height:100vh;background:var(--bg);color:var(--ink);transition:background .5s,color .5s">
+
+<nav style="position:fixed;top:0;left:0;right:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:24px clamp(16px,4vw,56px);background:var(--bg);border-bottom:1px solid var(--line);transition:background .5s;font-family:'Space Mono',monospace">
+  <a href="#top" onClick="{{ closeMenu }}" style="display:block;flex:none"><span style="position:relative;display:block;width:130px;height:17px;overflow:hidden"><img src="fotos/logo.jpg" alt="Mai Lawson" style="position:absolute;left:-83px;top:-74px;width:293px;filter:var(--logoF);mix-blend-mode:var(--logoB)"></span></a>
+  <div data-navlinks="1" style="display:flex;gap:clamp(28px,4.5vw,80px);font-size:15px;letter-spacing:.24em;text-transform:uppercase;color:var(--mute)">
+      <a href="#bio"><span data-l="es">Bio</span><span data-l="en">Bio</span></a>
+      <a href="#shows">Shows</a>
+      <a href="#musica"><span data-l="es">Música</span><span data-l="en">Music</span></a>
+      <a href="#industria">Industria Argentina</a>
+      <a href="#prensa"><span data-l="es">Prensa</span><span data-l="en">Press</span></a>
+      <a href="#contacto"><span data-l="es">Contacto</span><span data-l="en">Contact</span></a>
+  </div>
+  <div style="display:flex;align-items:center;gap:20px;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--mute)">
+    <button onClick="{{ toggleLang }}" style="background:none;border:0;padding:0;cursor:pointer;display:flex;gap:6px;letter-spacing:.2em;font-size:13px"><span data-la="es">ES</span><span data-la="en">EN</span></button>
+    <button onClick="{{ toggleTheme }}" aria-label="Modo claro / oscuro" style="width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:none;cursor:pointer;display:flex;align-items:center;justify-content:center"><span style="width:12px;height:12px;border-radius:50%;border:1.2px solid currentColor;background:linear-gradient(90deg,currentColor 50%,transparent 50%)"></span></button>
+    <button data-menubtn="1" onClick="{{ toggleMenu }}" aria-label="Menú" style="height:36px;padding:0 18px;border-radius:999px;border:0;background:var(--ink);color:var(--bg);cursor:pointer;font-size:12px;letter-spacing:.2em;text-transform:uppercase;display:flex;align-items:center;gap:10px"><span style="display:flex;flex-direction:column;gap:4px"><span style="display:block;width:14px;height:1.5px;background:currentColor"></span><span style="display:block;width:14px;height:1.5px;background:currentColor"></span></span><span data-l="es">Menú</span><span data-l="en">Menu</span></button>
+  </div>
+</nav>
+
+<sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+  <div style="position:fixed;inset:0;z-index:15;background:var(--bg);padding:120px clamp(20px,6vw,56px) 40px;display:flex;flex-direction:column;justify-content:space-between;gap:40px;overflow:auto">
+    <div style="display:flex;flex-direction:column;font-weight:200;font-size:clamp(36px,9vw,64px);line-height:1.1;text-transform:uppercase;letter-spacing:.02em">
+      <a href="#bio" onClick="{{ closeMenu }}" style="display:flex;align-items:baseline;gap:16px;padding:12px 0;border-bottom:1px solid var(--line)"><span style="font-size:12px;letter-spacing:.24em;color:var(--acc)">03</span><span data-l="es">Bio</span><span data-l="en">Bio</span></a>
+      <a href="#shows" onClick="{{ closeMenu }}" style="display:flex;align-items:baseline;gap:16px;padding:12px 0;border-bottom:1px solid var(--line)"><span style="font-size:12px;letter-spacing:.24em;color:var(--acc)">01</span>Shows</a>
+      <a href="#musica" onClick="{{ closeMenu }}" style="display:flex;align-items:baseline;gap:16px;padding:12px 0;border-bottom:1px solid var(--line)"><span style="font-size:12px;letter-spacing:.24em;color:var(--acc)">02</span><span data-l="es">Música</span><span data-l="en">Music</span></a>
+      <a href="#industria" onClick="{{ closeMenu }}" style="display:flex;align-items:baseline;gap:16px;padding:12px 0;border-bottom:1px solid var(--line)"><span style="font-size:12px;letter-spacing:.24em;color:var(--acc)">04</span>Industria</a>
+      <a href="#prensa" onClick="{{ closeMenu }}" style="display:flex;align-items:baseline;gap:16px;padding:12px 0;border-bottom:1px solid var(--line)"><span style="font-size:12px;letter-spacing:.24em;color:var(--acc)">05</span><span data-l="es">Prensa</span><span data-l="en">Press</span></a>
+      <a href="#contacto" onClick="{{ closeMenu }}" style="display:flex;align-items:baseline;gap:16px;padding:12px 0;border-bottom:1px solid var(--line)"><span style="font-size:12px;letter-spacing:.24em;color:var(--acc)">06</span><span data-l="es">Contacto</span><span data-l="en">Contact</span></a>
+    </div>
+    <div style="display:flex;gap:24px;flex-wrap:wrap;font-size:12px;letter-spacing:.2em;text-transform:uppercase">
+      <a href="https://www.instagram.com/mailawson/" target="_blank">Instagram ↗</a>
+      <a href="https://soundcloud.com/mailawson" target="_blank">SoundCloud ↗</a>
+      <a href="https://open.spotify.com/artist/3PngX6M3ZzUgqCLzUMZNW3" target="_blank">Spotify ↗</a>
+    </div>
+  </div>
+</sc-if>
+
+<header id="top" data-hero="1" style="position:relative;min-height:min(100vh,920px);display:flex;align-items:flex-end;overflow:hidden;background:#0E0C0C">
+  <div data-parallax="1" style="position:absolute;inset:0;will-change:transform"><div style="position:absolute;inset:0;animation:mlBreath 18s ease-in-out 2.6s infinite"><img src="fotos/tapa.jpg" alt="Mai Lawson" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%;animation:mlHeroImg 2.6s cubic-bezier(.16,1,.3,1) both"></div></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,12,12,.35) 0%,rgba(14,12,12,0) 30%,rgba(14,12,12,0) 50%,rgba(14,12,12,.8) 100%);pointer-events:none"></div>
+  <div style="position:relative;width:100%;padding:0 clamp(20px,4vw,56px) clamp(32px,5vw,64px);display:flex;flex-direction:column;align-items:flex-start;gap:28px;color:#F3ECE9">
+    <h1 style="margin:0;font-weight:200;font-size:clamp(52px,9vw,152px);line-height:.88;letter-spacing:.02em;text-transform:uppercase"><span style="display:block;overflow:hidden;padding-bottom:.04em"><span style="display:block;animation:mlRise 1.2s cubic-bezier(.16,1,.3,1) .5s both">Mai</span></span><span style="display:block;overflow:hidden;padding-bottom:.04em"><span style="display:block;animation:mlRise 1.2s cubic-bezier(.16,1,.3,1) .65s both">Lawson</span></span></h1>
+    <div style="display:flex;align-items:center;gap:clamp(20px,3vw,36px);color:rgba(243,236,233,.6);animation:mlFade 1s ease-out 1.2s both">
+      <a href="https://www.beatport.com/artist/mai-lawson/775281" target="_blank" aria-label="Beatport" style="display:flex;color:inherit" style-hover="color:#F3ECE9"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M11 2.5v9.5"></path><path d="M11 8.5 5.5 14"></path><circle cx="14.5" cy="16" r="4.5"></circle></svg></a>
+      <a href="https://open.spotify.com/artist/3PngX6M3ZzUgqCLzUMZNW3" target="_blank" aria-label="Spotify" style="display:flex;color:inherit" style-hover="color:#F3ECE9"><svg width="30" height="30" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="currentColor"></circle><path d="M6.3 9.2c3.8-1.1 8.1-.8 11.4 1.1M6.9 12.4c3.1-.9 6.6-.6 9.4 1M7.5 15.4c2.5-.7 5.2-.4 7.4.8" fill="none" stroke="#0E0C0C" stroke-width="1.6" stroke-linecap="round"></path></svg></a>
+      <a href="https://soundcloud.com/mailawson" target="_blank" aria-label="SoundCloud" style="display:flex;color:inherit" style-hover="color:#F3ECE9"><svg width="40" height="30" viewBox="0 0 32 24" fill="currentColor"><rect x="1" y="12" width="1.4" height="6" rx=".7"></rect><rect x="3.6" y="10" width="1.4" height="8" rx=".7"></rect><rect x="6.2" y="9" width="1.4" height="9" rx=".7"></rect><rect x="8.8" y="7.5" width="1.4" height="10.5" rx=".7"></rect><rect x="11.4" y="6.5" width="1.4" height="11.5" rx=".7"></rect><path d="M14 6.2c.9-.5 1.9-.7 3-.7 3.3 0 6 2.4 6.5 5.5.4-.1.8-.2 1.3-.2 2.2 0 4 1.7 4 3.6S27 18 24.8 18H14z"></path></svg></a>
+      <a href="https://www.instagram.com/mailawson/" target="_blank" aria-label="Instagram" style="display:flex;color:inherit" style-hover="color:#F3ECE9"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5"></rect><circle cx="12" cy="12" r="4.3"></circle><circle cx="17.6" cy="6.4" r="1" fill="currentColor" stroke="none"></circle></svg></a>
+      <a href="https://www.youtube.com/@mailawson874" target="_blank" aria-label="YouTube" style="display:flex;color:inherit" style-hover="color:#F3ECE9"><svg width="34" height="30" viewBox="0 0 28 24"><rect x="1" y="4" width="26" height="17" rx="5" fill="currentColor"></rect><path d="M11.5 8.5v8l7-4z" fill="#0E0C0C"></path></svg></a>
+    </div>
+  </div>
+</header>
+
+<section id="bio" data-screen-label="Bio" style="display:flex;flex-wrap:wrap;padding:clamp(64px,9vw,128px) clamp(20px,4vw,56px);border-bottom:1px solid var(--line);gap:40px">
+  <div style="flex:1 1 220px"><div data-side="1" style="position:sticky;top:110px;display:flex;flex-direction:column;gap:10px">
+    <span style="font-size:12px;letter-spacing:.24em;color:var(--acc)">01</span>
+    <h2 style="margin:0;font-weight:200;font-size:clamp(36px,4vw,56px);line-height:1;text-transform:uppercase;letter-spacing:.04em"><span data-l="es">Bio</span><span data-l="en">Bio</span></h2>
+  </div></div>
+  <div style="display:flex;flex-wrap:wrap;gap:clamp(32px,4vw,64px);min-width:0;flex:3 1 560px;align-items:flex-start">
+    <div style="flex:3 1 380px;min-width:0;display:flex;flex-direction:column;gap:28px;font-size:16px;line-height:1.75;text-wrap:pretty">
+      <div data-l="es" style="display:flex;flex-direction:column;gap:18px">
+        <p style="margin:0;font-family:'Old Standard TT',serif;font-size:clamp(24px,2.4vw,30px);line-height:1.25">Mai Lawson, DJ y productora, comienza su carrera profesional en 2007, llevando su música por clubes de Argentina, América Latina, Estados Unidos, Canadá, Europa, Asia y África.</p>
+        <p style="margin:0;color:var(--mute)">Con una trayectoria de 20 años en la escena global, es pionera absoluta: la primera DJ argentina en tocar en Burning Man y en ser tapa de Mixmag.</p>
+        <p style="margin:0;color:var(--mute)">Su música cruzó fronteras y se convirtió en la primera latinoamericana en presentarse en Sri Lanka, frente a 10 mil personas, logrando una presencia global en los cuatro continentes y con fechas próximas en Australia.</p>
+        <p style="margin:0;color:var(--mute)">Como productora ha alcanzado múltiples veces el top ten y ha editado en sellos como The Soundgarden, Warung Recordings, Gardens of Babylon, Balance y Mango Alley, entre otros.</p>
+        <p style="margin:0;color:var(--mute)">Ha tocado en los venues más importantes de su país y es considerada una influencia global, lo que la llevó a compartir cabina con Carl Cox, Hernán Cattáneo, Maceo Plex, ARTBAT, Nick Warren, Miss Monique y Argy, entre otros.</p>
+        <p style="margin:0;color:var(--mute)">Es docente de la Carrera de DJ, ha dado charlas alrededor del mundo y maneja Industria Argentina, su label y ciclo de fiestas.</p>
+      </div>
+      <div data-l="en" style="display:flex;flex-direction:column;gap:18px">
+        <p style="margin:0;font-family:'Old Standard TT',serif;font-size:clamp(24px,2.4vw,30px);line-height:1.25">Mai Lawson, DJ and producer, started her professional career in 2007, taking her music to clubs across Argentina, Latin America, the USA, Canada, Europe, Asia and Africa.</p>
+        <p style="margin:0;color:var(--mute)">With a 20-year career on the global scene, she is a true pioneer: the first Argentine DJ to play Burning Man and to land the cover of Mixmag.</p>
+        <p style="margin:0;color:var(--mute)">Her music has crossed borders — she became the first Latin American artist to perform in Sri Lanka, in front of 10,000 people, building a global presence across four continents, with upcoming dates in Australia.</p>
+        <p style="margin:0;color:var(--mute)">As a producer she has reached the top ten many times, releasing on labels such as The Soundgarden, Warung Recordings, Gardens of Babylon, Balance and Mango Alley, among others.</p>
+        <p style="margin:0;color:var(--mute)">She has played the most important venues in her country and is considered a global influence, sharing the booth with Carl Cox, Hernán Cattáneo, Maceo Plex, ARTBAT, Nick Warren, Miss Monique and Argy, among others.</p>
+        <p style="margin:0;color:var(--mute)">She teaches on the professional DJ program, has given talks around the world, and runs Industria Argentina, her label and party series.</p>
+      </div>
+    </div>
+    <div style="flex:2 1 280px;min-width:0;display:flex;flex-direction:column;gap:16px">
+      <img src="fotos/prensa.jpg" alt="Mai Lawson" style="width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 40%;border-radius:12px;filter:var(--img)">
+      <a href="assets/MaiLawson-EPK-2026.pdf" download="MaiLawson-EPK-2026.pdf" style="display:flex;justify-content:space-between;align-items:center;padding:22px 26px;border-radius:12px;background:var(--acc);color:#1C1716;font-size:13px;font-weight:500;letter-spacing:.2em;text-transform:uppercase" style-hover="background:var(--ink);color:var(--bg)"><span><span data-l="es">Descargar EPK 2026</span><span data-l="en">Download EPK 2026</span></span><span>PDF ↓</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="shows" data-screen-label="Shows" style="display:flex;flex-wrap:wrap;padding:clamp(64px,9vw,128px) clamp(20px,4vw,56px);border-bottom:1px solid var(--line);gap:40px">
+  <div style="flex:1 1 220px"><div data-side="1" style="position:sticky;top:110px;display:flex;flex-direction:column;gap:10px">
+    <span style="font-size:12px;letter-spacing:.24em;color:var(--acc)">02</span>
+    <h2 style="margin:0;font-weight:200;font-size:clamp(36px,4vw,56px);line-height:1;text-transform:uppercase;letter-spacing:.04em">Shows</h2>
+  </div></div>
+  <div style="flex:3 1 560px;min-width:0;display:flex;flex-direction:column;gap:48px">
+    <div style="display:grid;grid-template-columns:2fr 1fr;gap:16px">
+      <img src="fotos/crowd.jpg" alt="" style="width:100%;height:clamp(280px,42vw,620px);object-fit:cover;border-radius:12px;filter:var(--img);transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:translateY(-6px) scale(1.03);filter:var(--img) brightness(1.08)">
+      <div style="display:grid;grid-template-rows:1fr 1fr;gap:16px;height:clamp(280px,42vw,620px)">
+        <img src="fotos/neon.jpg" alt="" style="width:100%;height:100%;min-height:0;object-fit:cover;border-radius:12px;filter:var(--img);transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:translateY(-6px) scale(1.03);filter:var(--img) brightness(1.08)">
+        <img src="fotos/redstage.jpg" alt="" style="width:100%;height:100%;min-height:0;object-fit:cover;border-radius:12px;filter:var(--img);transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:translateY(-6px) scale(1.03);filter:var(--img) brightness(1.08)">
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column">
+      <p style="margin:0 0 16px;font-family:'Space Mono',monospace;font-size:14px;letter-spacing:.24em;text-transform:uppercase;color:var(--acc)"><span data-l="es">Venues y festivales</span><span data-l="en">Venues &amp; festivals</span></p>
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 22px;font-family:'Old Standard TT',serif;font-size:clamp(19px,1.7vw,24px);line-height:1.3;padding-top:20px;border-top:1px solid var(--line)">
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Burning Man<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Nevada</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Creamfields<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Buenos Aires</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Ultra<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Buenos Aires</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Miami Music Week<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Miami</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">ADE · Watt Events<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Ámsterdam</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Warung<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Brasil</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">D-Edge<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Brasil</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Pacha<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Barcelona</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Art Basel by The Soundgarden<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Miami</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Brunch in the Park<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Barcelona</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">World Cup Party · Mixmag<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">México</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">La Foresta<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Sri Lanka</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Crobar<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Buenos Aires</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Goat Festival<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Portugal</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Surreal Park<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Brasil</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Culture Box<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Dinamarca</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Cova Santa<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Ibiza</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Club Chinoise<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Ibiza</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Watt Events & The Soundgarden<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Ámsterdam</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">P12 Jurerê<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Brasil</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Carpe Diem<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Barcelona</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Treehouse<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Miami</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Rolling Stock<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Londres</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Generator<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Londres</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Lula Club<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Madrid</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">NOM<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Barcelona</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Mandarine<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Buenos Aires</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">La Fábrica Arena<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Argentina</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Around<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Chile</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Club Room<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Chile</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Sunrise<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Perú</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Ozmosis<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Canadá</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Soundtuary<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Miami</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Do Not Sit<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Miami</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Colorado Charly<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Ámsterdam</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">La Terraza<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Barcelona</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Le Officine<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Francia</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Skyline<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Escocia</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Axis<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Portugal</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Grape Club<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Kosovo</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Darkcode<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Egipto</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Sky Bar<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Marruecos</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">FiftyEight<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Puerto Rico</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Soles<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Punta Cana</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Red Room<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Brasil</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">House of Res<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Ecuador</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Blue Moon<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Bolivia</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">La Feria<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Chile</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">La Estación<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Argentina</span></span>
+        <span style="display:inline-flex;align-items:baseline;gap:7px">Río Electronic<span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)">Argentina</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="musica" data-screen-label="Música" style="display:flex;flex-wrap:wrap;padding:clamp(64px,9vw,128px) clamp(20px,4vw,56px);border-bottom:1px solid var(--line);gap:40px">
+  <div style="flex:1 1 220px"><div data-side="1" style="position:sticky;top:110px;display:flex;flex-direction:column;gap:10px">
+    <span style="font-size:12px;letter-spacing:.24em;color:var(--acc)">03</span>
+    <h2 style="margin:0;font-weight:200;font-size:clamp(36px,4vw,56px);line-height:1;text-transform:uppercase;letter-spacing:.04em"><span data-l="es">Música</span><span data-l="en">Music</span></h2>
+  </div></div>
+  <div style="flex:3 1 560px;min-width:0;display:flex;flex-direction:column;gap:40px">
+    <p style="margin:0;max-width:760px;font-family:'Old Standard TT',serif;font-size:clamp(26px,3vw,40px);line-height:1.25;text-wrap:pretty"><span data-l="es">Lanzamientos en <i>The Soundgarden, Warung Recordings, The Gardens of Babylon, Balance</i> y <i>Mango Alley.</i> Varias veces en el top 10 de Beatport.</span><span data-l="en">Releases on <i>The Soundgarden, Warung Recordings, The Gardens of Babylon, Balance</i> and <i>Mango Alley.</i> Multiple Beatport top 10 entries.</span></p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:16px">
+      <iframe src="https://open.spotify.com/embed/artist/3PngX6M3ZzUgqCLzUMZNW3?theme=0" title="Spotify" loading="lazy" allow="encrypted-media" style="width:100%;height:380px;border:0;border-radius:12px;background:var(--card)"></iframe>
+      <iframe src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fsoundcloud.com%2Fmailawson&amp;color=%23d4513f&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_reposts=false&amp;visual=false" title="SoundCloud" loading="lazy" style="width:100%;height:380px;border:0;border-radius:12px;background:var(--card);filter:var(--scF)"></iframe>
+    </div>
+    <div style="display:flex;flex-direction:column;border-top:1px solid var(--line);font-size:14px;letter-spacing:.18em;text-transform:uppercase">
+      <a href="https://www.beatport.com/artist/mai-lawson/775281" target="_blank" style="display:flex;justify-content:space-between;padding:20px 0;border-bottom:1px solid var(--line)"><span>Beatport</span><span>↗</span></a>
+      <a href="https://open.spotify.com/artist/3PngX6M3ZzUgqCLzUMZNW3" target="_blank" style="display:flex;justify-content:space-between;padding:20px 0;border-bottom:1px solid var(--line)"><span>Spotify</span><span>↗</span></a>
+      <a href="https://soundcloud.com/mailawson" target="_blank" style="display:flex;justify-content:space-between;padding:20px 0;border-bottom:1px solid var(--line)"><span>SoundCloud</span><span>↗</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="industria" data-screen-label="Industria Argentina" style="position:relative;overflow:hidden;background:#22223A;color:#F3ECE9">
+  <img src="fotos/ia-fiesta.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.9">
+  <div style="position:relative;min-height:clamp(480px,60vw,760px);padding:clamp(56px,8vw,112px) clamp(20px,4vw,56px);display:flex;flex-direction:column;justify-content:space-between;gap:48px;background:linear-gradient(180deg,rgba(34,34,58,.6),rgba(34,34,58,0) 40%,rgba(34,34,58,.75))">
+    <div style="display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;font-size:12px;letter-spacing:.24em;text-transform:uppercase">
+      <span>04 — Industria Argentina</span>
+      <span><span data-l="es">Label & ciclo de fiestas</span><span data-l="en">Label & party series</span></span>
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap">
+      <p style="margin:0;max-width:560px;font-family:'Old Standard TT',serif;font-size:clamp(26px,3.1vw,44px);line-height:1.2;text-wrap:pretty"><span data-l="es">Sello y ciclo de Mai Lawson: música electrónica <i>hecha en casa.</i></span><span data-l="en">Mai Lawson's label and party series: <i>homegrown</i> electronic music.</span></p>
+      <a href="https://www.instagram.com/ia_industriaargentina/" target="_blank" style="padding:16px 28px;border-radius:999px;background:#F3ECE9;color:#22223A;font-size:12px;font-weight:500;letter-spacing:.2em;text-transform:uppercase"><span data-l="es">Próximas fechas</span><span data-l="en">Upcoming dates</span> ↗</a>
+    </div>
+  </div>
+</section>
+
+<section id="industria-fotos" data-screen-label="Industria Argentina — Fotos" style="padding:clamp(48px,7vw,96px) clamp(20px,4vw,56px);border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:32px">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap">
+    <p style="margin:0;font-family:'Space Mono',monospace;font-size:14px;letter-spacing:.24em;text-transform:uppercase;color:var(--acc)"><span data-l="es">Noches de Industria Argentina</span><span data-l="en">Industria Argentina nights</span></p>
+    <a href="https://www.instagram.com/ia_industriaargentina/" target="_blank" style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;padding-bottom:6px;border-bottom:1px solid currentColor">@ia_industriaargentina ↗</a>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:12px">
+    <div style="position:relative;aspect-ratio:3/2;border-radius:12px;overflow:hidden;background:var(--card)"><img src="fotos/ia3.jpg" alt="Industria Argentina" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:50% 40%;filter:var(--img);transition:transform .9s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:scale(1.05);filter:var(--img) brightness(1.08)"></div>
+    <div style="position:relative;aspect-ratio:3/2;border-radius:12px;overflow:hidden;background:var(--card)"><img src="fotos/ia1.jpg" alt="Industria Argentina" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:50% 35%;filter:var(--img);transition:transform .9s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:scale(1.05);filter:var(--img) brightness(1.08)"></div>
+    <div style="position:relative;aspect-ratio:3/2;border-radius:12px;overflow:hidden;background:var(--card)"><img src="fotos/ia4.jpg" alt="Industria Argentina" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:50% 45%;filter:var(--img);transition:transform .9s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:scale(1.05);filter:var(--img) brightness(1.08)"></div>
+  </div>
+</section>
+
+<section id="prensa" data-screen-label="Prensa" style="display:flex;flex-wrap:wrap;padding:clamp(64px,9vw,128px) clamp(20px,4vw,56px);border-bottom:1px solid var(--line);gap:40px">
+  <div style="flex:1 1 220px"><div data-side="1" style="position:sticky;top:110px;display:flex;flex-direction:column;gap:10px">
+    <span style="font-size:12px;letter-spacing:.24em;color:var(--acc)">05</span>
+    <h2 style="margin:0;font-weight:200;font-size:clamp(36px,4vw,56px);line-height:1;text-transform:uppercase;letter-spacing:.04em"><span data-l="es">Prensa</span><span data-l="en">Press</span></h2>
+  </div></div>
+  <div style="flex:3 1 560px;min-width:0">
+    <div style="display:flex;flex-wrap:wrap;align-items:flex-end;gap:32px clamp(32px,4vw,56px)">
+    <div style="flex:3 1 340px;min-width:0;display:flex;flex-direction:column;gap:14px">
+      <p style="margin:0;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--acc)"><span data-l="es">Tapa en Mixmag</span><span data-l="en">Mixmag cover</span></p>
+      <div style="display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:10px">
+        <a href="fotos/prensa3.jpg" target="_blank" style="display:block;position:relative;border-radius:12px;overflow:hidden;background:var(--card);aspect-ratio:4/5"><img src="fotos/prensa3.jpg" alt="Mai Lawson — prensa 3" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .7s cubic-bezier(.2,.7,.2,1)" style-hover="transform:scale(1.04)"></a>
+        <div style="display:flex;flex-direction:column;gap:10px;min-height:0"><a href="fotos/prensa2.jpg" target="_blank" style="display:block;position:relative;border-radius:12px;overflow:hidden;background:var(--card);flex:1 1 0;min-height:0"><img src="fotos/prensa2.jpg" alt="Mai Lawson — prensa 2" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .7s cubic-bezier(.2,.7,.2,1)" style-hover="transform:scale(1.04)"></a><a href="fotos/prensa1.jpg" target="_blank" style="display:block;position:relative;border-radius:12px;overflow:hidden;background:var(--card);flex:1 1 0;min-height:0"><img src="fotos/prensa1.jpg" alt="Mai Lawson — prensa 1" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .7s cubic-bezier(.2,.7,.2,1)" style-hover="transform:scale(1.04)"></a></div>
+      </div>
+    </div>
+    <div style="flex:2 1 260px;min-width:0;display:flex;flex-direction:column;gap:14px">
+      <p style="margin:0;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--acc)"><span data-l="es">Nota en DJ Mag London</span><span data-l="en">DJ Mag London feature</span></p>
+      <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px">
+        <a href="fotos/prensa4.jpg" target="_blank" style="display:block;position:relative;border-radius:12px;overflow:hidden;background:var(--card);aspect-ratio:4/5"><img src="fotos/prensa4.jpg" alt="Mai Lawson — prensa 4" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .7s cubic-bezier(.2,.7,.2,1)" style-hover="transform:scale(1.04)"></a>
+        <a href="fotos/prensa5.jpg" target="_blank" style="display:block;position:relative;border-radius:12px;overflow:hidden;background:var(--card);aspect-ratio:4/5"><img src="fotos/prensa5.jpg" alt="Mai Lawson — prensa 5" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .7s cubic-bezier(.2,.7,.2,1)" style-hover="transform:scale(1.04)"></a>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section id="contacto" data-screen-label="Contacto" style="display:flex;flex-wrap:wrap;padding:clamp(64px,9vw,128px) clamp(20px,4vw,56px);gap:40px">
+  <div style="flex:1 1 220px;display:flex;flex-direction:column;gap:10px">
+    <span style="font-size:12px;letter-spacing:.24em;color:var(--acc)">06</span>
+    <h2 style="margin:0;font-weight:200;font-size:clamp(36px,4vw,56px);line-height:1;text-transform:uppercase;letter-spacing:.04em"><span data-l="es">Contacto</span><span data-l="en">Contact</span></h2>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:clamp(32px,4vw,64px);min-width:0;flex:3 1 560px">
+    <div style="display:flex;flex-direction:column;gap:28px">
+      <p style="margin:0;font-family:'Old Standard TT',serif;font-size:clamp(30px,3.4vw,48px);line-height:1.15">Booking, <i><span data-l="es">prensa y colaboraciones.</span><span data-l="en">press &amp; collaborations.</span></i></p>
+      <a href="mailto:mailawsonbookings@gmail.com" style="display:flex;flex-direction:column;gap:8px;align-self:flex-start" style-hover="color:var(--acc)"><span style="color:var(--acc);font-family:'Space Mono',monospace;letter-spacing:.18em;text-transform:uppercase;font-size:11px">Bookings</span><span style="font-size:clamp(17px,1.6vw,21px);border-bottom:1px solid var(--line);padding-bottom:6px;word-break:break-all">mailawsonbookings@gmail.com</span></a>
+      <div style="display:flex;gap:24px;flex-wrap:wrap;font-size:12px;letter-spacing:.2em;text-transform:uppercase">
+        <a href="https://www.instagram.com/mailawson/" target="_blank">Instagram ↗</a>
+        <a href="https://www.facebook.com/mailawsondj/" target="_blank">Facebook ↗</a>
+        <a href="https://soundcloud.com/mailawson" target="_blank">SoundCloud ↗</a>
+      </div>
+      <a href="assets/MaiLawson-EPK-2026.pdf" download="MaiLawson-EPK-2026.pdf" style="display:flex;justify-content:space-between;align-items:center;gap:32px;align-self:flex-start;padding:18px 24px;border-radius:12px;background:var(--acc);color:#1C1716;font-size:12px;font-weight:500;letter-spacing:.2em;text-transform:uppercase" style-hover="background:var(--ink);color:var(--bg)"><span><span data-l="es">Descargar EPK 2026</span><span data-l="en">Download EPK 2026</span></span><span>PDF ↓</span></a>
+    </div>
+    <sc-if value="{{ notSent }}" hint-placeholder-val="{{ true }}">
+      <form onSubmit="{{ send }}" style="display:flex;flex-direction:column;gap:4px"><input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+        <input name="name" required="" placeholder="Nombre / Name" style="background:none;border:0;border-bottom:1px solid var(--line);padding:18px 0;font-size:18px;outline:none">
+        <input name="email" type="email" required="" placeholder="Email" style="background:none;border:0;border-bottom:1px solid var(--line);padding:18px 0;font-size:18px;outline:none">
+        <textarea name="message" rows="3" placeholder="Fecha, lugar, evento / Date, venue, event" style="background:none;border:0;border-bottom:1px solid var(--line);padding:18px 0;font-size:18px;outline:none;resize:vertical"></textarea>
+        <sc-if value="{{ failed }}" hint-placeholder-val="{{ false }}"><p style="margin:12px 0 0;font-size:14px;color:var(--acc)"><span data-l="es">No se pudo enviar. Escribinos a mailawsonbookings@gmail.com</span><span data-l="en">Could not send. Email mailawsonbookings@gmail.com</span></p></sc-if>
+        <button type="submit" disabled="{{ sending }}" style="margin-top:24px;align-self:flex-start;padding:16px 32px;border-radius:999px;border:0;background:var(--ink);color:var(--bg);cursor:pointer;font-size:12px;font-weight:500;letter-spacing:.2em;text-transform:uppercase" style-hover="background:var(--acc);color:#1C1716"><span data-l="es">Enviar</span><span data-l="en">Send</span> →</button>
+      </form>
+    </sc-if>
+    <sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}">
+      <p style="margin:0;font-family:'Old Standard TT',serif;font-style:italic;font-size:34px"><span data-l="es">Gracias, te respondemos pronto.</span><span data-l="en">Thank you, we'll be in touch soon.</span></p>
+    </sc-if>
+  </div>
+</section>
+
+<section data-screen-label="Carrusel" data-marquee="1" style="padding:0 0 clamp(48px,6vw,80px);overflow:hidden">
+  <div data-track="1" style="display:flex;gap:16px;width:max-content;height:clamp(240px,28vw,400px);animation:mlMarquee 140s linear infinite">
+    <img src="fotos/g1.jpg" alt="" style="height:100%;aspect-ratio:1;width:auto;flex:none;border-radius:12px;object-fit:cover;filter:var(--img);order:{{ co0_1 }};transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:translateY(-6px) scale(1.03);filter:var(--img) brightness(1.08)">
+    <img src="fotos/g2.jpg" alt="" style="height:100%;aspect-ratio:1;width:auto;flex:none;border-radius:12px;object-fit:cover;filter:var(--img);order:{{ co0_2 }};transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:translateY(-6px) scale(1.03);filter:var(--img) brightness(1.08)">
+    <img src="fotos/g3.jpg" alt="" style="height:100%;aspect-ratio:1;width:auto;flex:none;border-radius:12px;object-fit:cover;filter:var(--img);order:{{ co0_3 }};transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:translateY(-6px) scale(1.03);filter:var(--img) brightness(1.08)">
+    <img src="fotos/g4.jpg" alt="" style="height:100%;aspect-ratio:1;width:auto;flex:none;border-radius:12px;object-fit:cover;filter:var(--img);order:{{ co0_4 }};transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:translateY(-6px) scale(1.03);filter:var(--img) brightness(1.08)">
+    <img src="fotos/g5.jpg" alt="" style="height:100%;aspect-ratio:1;width:auto;flex:none;border-radius:12px;object-fit:cover;filter:var(--img);order:{{ co0_5 }};transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:translateY(-6px) scale(1.03);filter:var(--img) brightness(1.08)">
+    <img src="fotos/g6.jpg" alt="" style="height:100%;aspect-ratio:1;width:auto;flex:none;border-radius:12px;object-fit:cover;filter:var(--img);order:{{ co0_6 }};transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:translateY(-6px) scale(1.03);filter:var(--img) brightness(1.08)">
+    <img src="fotos/g7.jpg" alt="" style="height:100%;aspect-ratio:1;width:auto;flex:none;border-radius:12px;object-fit:cover;filter:var(--img);order:{{ co0_7 }};transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:translateY(-6px) scale(1.03);filter:var(--img) brightness(1.08)">
+    <img src="fotos/g8.jpg" alt="" style="height:100%;aspect-ratio:1;width:auto;flex:none;border-radius:12px;object-fit:cover;filter:var(--img);order:{{ co0_8 }};transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:translateY(-6px) scale(1.03);filter:var(--img) brightness(1.08)">
+    <img src="fotos/g9.jpg" alt="" style="height:100%;aspect-ratio:1;width:auto;flex:none;border-radius:12px;object-fit:cover;filter:var(--img);order:{{ co0_9 }};transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:translateY(-6px) scale(1.03);filter:var(--img) brightness(1.08)">
+    <img src="fotos/g10.jpg" alt="" style="height:100%;aspect-ratio:1;width:auto;flex:none;border-radius:12px;object-fit:cover;filter:var(--img);order:{{ co0_10 }};transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:translateY(-6px) scale(1.03);filter:var(--img) brightness(1.08)">
+    <img src="fotos/g11.jpg" alt="" style="height:100%;aspect-ratio:1;width:auto;flex:none;border-radius:12px;object-fit:cover;filter:var(--img);order:{{ co0_11 }};transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:translateY(-6px) scale(1.03);filter:var(--img) brightness(1.08)">
+    <img src="fotos/g12.jpg" alt="" style="height:100%;aspect-ratio:1;width:auto;flex:none;border-radius:12px;object-fit:cover;filter:var(--img);order:{{ co0_12 }};transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:translateY(-6px) scale(1.03);filter:var(--img) brightness(1.08)">
+    <img src="fotos/g13.jpg" alt="" style="height:100%;aspect-ratio:1;width:auto;flex:none;border-radius:12px;object-fit:cover;filter:var(--img);order:{{ co0_13 }};transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:translateY(-6px) scale(1.03);filter:var(--img) brightness(1.08)">
+    <img src="fotos/g14.jpg" alt="" style="height:100%;aspect-ratio:1;width:auto;flex:none;border-radius:12px;object-fit:cover;filter:var(--img);order:{{ co0_14 }};transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:translateY(-6px) scale(1.03);filter:var(--img) brightness(1.08)">
+    <img src="fotos/g15.jpg" alt="" style="height:100%;aspect-ratio:1;width:auto;flex:none;border-radius:12px;object-fit:cover;filter:var(--img);order:{{ co0_15 }};transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:translateY(-6px) scale(1.03);filter:var(--img) brightness(1.08)">
+    <img src="fotos/g16.jpg" alt="" style="height:100%;aspect-ratio:1;width:auto;flex:none;border-radius:12px;object-fit:cover;filter:var(--img);order:{{ co0_16 }};transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:translateY(-6px) scale(1.03);filter:var(--img) brightness(1.08)">
+    <img src="fotos/g1.jpg" alt="" style="height:100%;aspect-ratio:1;width:auto;flex:none;border-radius:12px;object-fit:cover;filter:var(--img);order:{{ co1_1 }};transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:translateY(-6px) scale(1.03);filter:var(--img) brightness(1.08)">
+    <img src="fotos/g2.jpg" alt="" style="height:100%;aspect-ratio:1;width:auto;flex:none;border-radius:12px;object-fit:cover;filter:var(--img);order:{{ co1_2 }};transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:translateY(-6px) scale(1.03);filter:var(--img) brightness(1.08)">
+    <img src="fotos/g3.jpg" alt="" style="height:100%;aspect-ratio:1;width:auto;flex:none;border-radius:12px;object-fit:cover;filter:var(--img);order:{{ co1_3 }};transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:translateY(-6px) scale(1.03);filter:var(--img) brightness(1.08)">
+    <img src="fotos/g4.jpg" alt="" style="height:100%;aspect-ratio:1;width:auto;flex:none;border-radius:12px;object-fit:cover;filter:var(--img);order:{{ co1_4 }};transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:translateY(-6px) scale(1.03);filter:var(--img) brightness(1.08)">
+    <img src="fotos/g5.jpg" alt="" style="height:100%;aspect-ratio:1;width:auto;flex:none;border-radius:12px;object-fit:cover;filter:var(--img);order:{{ co1_5 }};transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:translateY(-6px) scale(1.03);filter:var(--img) brightness(1.08)">
+    <img src="fotos/g6.jpg" alt="" style="height:100%;aspect-ratio:1;width:auto;flex:none;border-radius:12px;object-fit:cover;filter:var(--img);order:{{ co1_6 }};transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:translateY(-6px) scale(1.03);filter:var(--img) brightness(1.08)">
+    <img src="fotos/g7.jpg" alt="" style="height:100%;aspect-ratio:1;width:auto;flex:none;border-radius:12px;object-fit:cover;filter:var(--img);order:{{ co1_7 }};transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:translateY(-6px) scale(1.03);filter:var(--img) brightness(1.08)">
+    <img src="fotos/g8.jpg" alt="" style="height:100%;aspect-ratio:1;width:auto;flex:none;border-radius:12px;object-fit:cover;filter:var(--img);order:{{ co1_8 }};transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:translateY(-6px) scale(1.03);filter:var(--img) brightness(1.08)">
+    <img src="fotos/g9.jpg" alt="" style="height:100%;aspect-ratio:1;width:auto;flex:none;border-radius:12px;object-fit:cover;filter:var(--img);order:{{ co1_9 }};transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:translateY(-6px) scale(1.03);filter:var(--img) brightness(1.08)">
+    <img src="fotos/g10.jpg" alt="" style="height:100%;aspect-ratio:1;width:auto;flex:none;border-radius:12px;object-fit:cover;filter:var(--img);order:{{ co1_10 }};transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:translateY(-6px) scale(1.03);filter:var(--img) brightness(1.08)">
+    <img src="fotos/g11.jpg" alt="" style="height:100%;aspect-ratio:1;width:auto;flex:none;border-radius:12px;object-fit:cover;filter:var(--img);order:{{ co1_11 }};transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:translateY(-6px) scale(1.03);filter:var(--img) brightness(1.08)">
+    <img src="fotos/g12.jpg" alt="" style="height:100%;aspect-ratio:1;width:auto;flex:none;border-radius:12px;object-fit:cover;filter:var(--img);order:{{ co1_12 }};transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:translateY(-6px) scale(1.03);filter:var(--img) brightness(1.08)">
+    <img src="fotos/g13.jpg" alt="" style="height:100%;aspect-ratio:1;width:auto;flex:none;border-radius:12px;object-fit:cover;filter:var(--img);order:{{ co1_13 }};transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:translateY(-6px) scale(1.03);filter:var(--img) brightness(1.08)">
+    <img src="fotos/g14.jpg" alt="" style="height:100%;aspect-ratio:1;width:auto;flex:none;border-radius:12px;object-fit:cover;filter:var(--img);order:{{ co1_14 }};transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:translateY(-6px) scale(1.03);filter:var(--img) brightness(1.08)">
+    <img src="fotos/g15.jpg" alt="" style="height:100%;aspect-ratio:1;width:auto;flex:none;border-radius:12px;object-fit:cover;filter:var(--img);order:{{ co1_15 }};transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:translateY(-6px) scale(1.03);filter:var(--img) brightness(1.08)">
+    <img src="fotos/g16.jpg" alt="" style="height:100%;aspect-ratio:1;width:auto;flex:none;border-radius:12px;object-fit:cover;filter:var(--img);order:{{ co1_16 }};transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s" style-hover="transform:translateY(-6px) scale(1.03);filter:var(--img) brightness(1.08)">
+  </div>
+</section>
+
+<div style="display:flex;justify-content:center;padding:clamp(48px,7vw,96px) clamp(20px,4vw,56px) clamp(32px,4vw,56px);border-top:1px solid var(--line)"><a href="#top" aria-label="Mai Lawson" style="display:block"><span style="position:relative;display:block;width:clamp(260px,40vw,520px);aspect-ratio:130/17;overflow:hidden"><img src="fotos/logo.jpg" alt="Mai Lawson" style="position:absolute;left:-63.85%;top:-435.3%;width:225.4%;filter:var(--logoF);mix-blend-mode:var(--logoB)"></span></a></div>
+<footer style="padding:28px clamp(20px,4vw,56px);border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--mute)">
+  <span>© 2026 Mai Lawson</span><span>Industria Argentina</span>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { sent: false, sending: false, failed: false, menuOpen: false };
+  order = (() => { const n = 16, a = [...Array(n).keys()]; for (let i = n - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } const o = {}; a.forEach((pos, k) => { o['co0_' + (k + 1)] = pos; o['co1_' + (k + 1)] = pos + n; }); return o; })();
+  componentDidMount() {
+    const mq = document.querySelector('[data-marquee]');
+    if (mq) {
+      const rate = (r) => { const t = mq.querySelector('[data-track]'); const an = t && t.getAnimations()[0]; if (!an) return; let cur = an.playbackRate; const step = () => { cur += (r - cur) * 0.12; if (Math.abs(r - cur) < 0.02) cur = r; an.updatePlaybackRate(cur); if (cur !== r) this._mqRaf = requestAnimationFrame(step); }; cancelAnimationFrame(this._mqRaf); step(); };
+      mq.addEventListener('mouseenter', () => rate(4));
+      mq.addEventListener('mouseleave', () => rate(1));
+    }
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      let raf = 0;
+      const onScroll = () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(() => { const el = document.querySelector('[data-parallax]'); const y = window.scrollY; if (el && y < window.innerHeight * 1.2) el.style.transform = 'translate3d(0,' + (y * 0.3) + 'px,0)'; }); };
+      window.addEventListener('scroll', onScroll, { passive: true });
+    }
+    const r = document.documentElement;
+    r.dataset.theme = localStorage.getItem('ml-c-theme') || 'dark';
+    const nav = (navigator.languages && navigator.languages[0]) || navigator.language || 'en';
+    r.dataset.lang = localStorage.getItem('ml-lang') || (/^es\b/i.test(nav) ? 'es' : 'en');
+    r.lang = r.dataset.lang;
+  }
+  renderVals() {
+    const r = document.documentElement;
+    const heroSrc = 'fotos/tapa.jpg', heroPos = '50% 30%';
+    return {
+      ...this.order,
+      menuOpen: this.state.menuOpen,
+      toggleMenu: () => this.setState(s => ({ menuOpen: !s.menuOpen })),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      toggleTheme: () => { const v = r.dataset.theme === 'light' ? 'dark' : 'light'; r.dataset.theme = v; localStorage.setItem('ml-c-theme', v); },
+      toggleLang: () => { const v = r.dataset.lang === 'es' ? 'en' : 'es'; r.dataset.lang = v; r.lang = v; localStorage.setItem('ml-lang', v); },
+      send: async e => {
+        e.preventDefault();
+        const fd = new FormData(e.target);
+        if (fd.get('botcheck')) return;
+        this.setState({ sending: true, failed: false });
+        try {
+          const res = await fetch('https://api.web3forms.com/submit', { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify({ access_key: '3137b42f-03bd-4aab-b24b-5b3d1855b722', subject: 'Booking — web Mai Lawson', from_name: 'Web Mai Lawson', name: fd.get('name'), email: fd.get('email'), message: fd.get('message') || '' }) });
+          const j = await res.json();
+          this.setState(j.success ? { sent: true, sending: false } : { failed: true, sending: false });
+        } catch (_) { this.setState({ failed: true, sending: false }); }
+      },
+      sending: this.state.sending, failed: this.state.failed,
+      sent: this.state.sent, notSent: !this.state.sent
+    };
+  }
+}
+</script>
+</body>
+</html>
